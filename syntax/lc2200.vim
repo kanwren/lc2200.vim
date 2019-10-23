@@ -25,7 +25,7 @@ syntax match lc2200Number /0x[A-Fa-f0-9]\+/
 
 syntax match lc2200OffsetValue /-\=\<[0-9]\+\>/ nextgroup=lc2200OffsetRegister
 syntax match lc2200OffsetValue /0x\=[A-Fa-f0-9]\+/ nextgroup=lc2200OffsetRegister
-syntax region lc2200OffsetRegister start=+(+ end=+)+ contains=lc2200Register
+syntax region lc2200OffsetRegister start=+(+ end=+)+ contains=lc2200Register matchgroup=lc2200OffsetRegister transparent
 
 syntax match lc2200Label /[A-Za-z_][A-Za-z0-9_]*/
 
