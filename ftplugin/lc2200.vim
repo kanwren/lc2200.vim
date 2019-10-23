@@ -3,7 +3,6 @@ if exists("b:did_ftplugin")
 endif
 let b:did_ftplugin = 1
 
-" TODO
-setlocal comments=:!
-setlocal commentstring=!%s
+setlocal comments=:;
+setlocal commentstring=;%s
 
